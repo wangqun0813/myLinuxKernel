@@ -2,7 +2,7 @@ VERSION = 4
 PATCHLEVEL = 9
 SUBLEVEL = 99
 EXTRAVERSION =
-NAME = Roaring Lionus
+NAME = qun.wang
 
 # *DOCUMENTATION*
 # To see a list of typical targets execute "make help"
