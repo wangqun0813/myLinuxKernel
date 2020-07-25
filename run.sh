@@ -2,7 +2,7 @@
 
 LROOT=$PWD
 ROOTFS_X86=_install_x86
-ROOTFS_ARM32=_install_arm32
+ROOTFS_ARM32=_install
 ROOTFS_ARM64=_install_arm64
 CONSOLE_DEV_NODE=dev/console
 
