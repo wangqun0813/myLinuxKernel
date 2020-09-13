@@ -1,0 +1,16 @@
+#ARCH ?= arm
+#CROSS_COMPILE ?= arm-linux-gnueabi-
+#BASEINCLUDE ?= /lib/modules/`uname -r`/build
+
+BASEINCLUDE ?= /home/rlk/rlk_basic/wq/origin/myLinuxKernel
+
+miscdev_module-objs := misc_dev.o
+obj-m := miscdev_module.o
+
+all:
+	$(MAKE) -C $(BASEINCLUDE) M=$(PWD) modules;
+clean:
+	$(MAKE) -C $(BASEINCLUDE) SUBDIRS=$(PWD) clean;
+	rm -f *.ko;
+
+
